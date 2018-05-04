@@ -2,12 +2,12 @@
 
 namespace app\controllers;
 
-use core\AppController;
+use core\BaseController;
 
-class PageController extends AppController
+class PageController extends BaseController
 {
     public function homeAction()
     {
-        return $this->view->render('pages/home');
+        $this->view->render('pages/home');
     }
 }

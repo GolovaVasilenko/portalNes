@@ -8,9 +8,10 @@ class BaseController
 {
     protected $view;
 
-    protected function loadView()
+    public function __construct()
     {
         $this->view = new View();
+        $this->request = new Request();
     }
 
     public function redirect($path)

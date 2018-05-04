@@ -5,16 +5,10 @@ namespace core;
 
 class BaseModel
 {
-    public static $saltPass = 'wD4y2fbx853iOfD51Esd';
-
     public static $saltKey  = 'rG7yr3kj624isVq51Ht5';
 
     const TABLE = '';
 
-    public static function cashPassword($pass, $saltPass)
-    {
-        return md5($pass . $saltPass);
-    }
 
     public static function cashSecretKey($cdate, $login, $saltKey)
     {

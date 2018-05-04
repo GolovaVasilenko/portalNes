@@ -12,8 +12,6 @@ class AppController extends BaseController
 
     public function __construct($route = '')
     {
-        $this->loadView();
-        $this->request = new Request();
         $this->route = $route;
     }
     protected function unserializeData($str)
