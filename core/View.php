@@ -1,5 +1,5 @@
 <?php
-namespace Core;
+namespace core;
 
 class View
 {
@@ -8,12 +8,7 @@ class View
     public $widgets   = array();
     public $meta_data = array();
 
-    public function __set($k, $v)
-    {
-        $this->data[$k] = $v;
-    }
-
-    protected function render($template , $data = [])
+    public function render($template , $data = [])
     {
         extract($data);
 
