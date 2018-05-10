@@ -20,7 +20,6 @@ class User extends BaseModel
         $user = new self;
         $user->dataInit(self::clearData($data));
         $user->save();
-
         return $user;
     }
 
@@ -40,5 +39,10 @@ class User extends BaseModel
         if($user){
             $user->delete();
         }
+    }
+
+    public static function checkoutUser($email, $password)
+    {
+        return User::where(['email' => $email, 'password' => $password]);
     }
 }

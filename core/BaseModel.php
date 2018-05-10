@@ -44,6 +44,33 @@ class BaseModel
             return [];
     }
 
+    public static function where($columns)
+    {
+        $cols = '';
+
+        $keys = array_keys($columns);
+
+        for($i = 0; count($keys) > $i; $i++){
+
+            $cols .= $keys[$i] . '=:' . $keys[$i];
+            if(count($keys)-1 != $i) {
+                $cols .= ' AND ';
+            }
+
+        }
+
+        $db = DataBase::getInstance();
+
+        $sql = 'SELECT * FROM ' . static::TABLE . ' WHERE ' . $cols;
+
+        $res = $db->query($sql, get_called_class() , $columns);
+        if(!empty($res[0]))
+            return  $res[0];
+        else
+            return [];
+
+    }
+
     protected function insert()
     {
         $columns = [];

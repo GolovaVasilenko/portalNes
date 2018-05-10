@@ -30,7 +30,8 @@
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-white">Follow on Twitter</a></li>
                         <li><a href="#" class="text-white">Like on Facebook</a></li>
-                        <li><a href="#" class="text-white">Email me</a></li>
+                        <li><a href="/login" class="text-white">Login</a></li>
+                        <li><a href="/register" class="text-white">Registration</a></li>
                     </ul>
                 </div>
             </div>
@@ -63,7 +64,9 @@
     </section-->
 
     <div class="container">
-
+    <?php if(\core\Session::getValue('errors')): ?>
+        <?php \core\Session::flashErrors();?>
+    <?php endif; ?>
     <?=$content;?>
     </div>
 </main>

@@ -6,6 +6,7 @@ use core\BaseController;
 use app\models\User;
 use core\Registration;
 use core\Session;
+use core\Validator;
 
 class RegisterController extends BaseController
 {
@@ -17,15 +18,32 @@ class RegisterController extends BaseController
     public function registrationAction()
     {
         if($postData = $this->request->ispost()) {
-            if(Registration::confirmationPasswords($postData['password'], $postData['password_confirm'])) {
-                $postData['password'] = Registration::hashPassword($postData['password']);
-                $user = User::add($postData);
+            $valid = new Validator([
+                'login' => 'required',
+                'email' => 'email',
+                'password' => 'required',
+            ]);
+            $errors = $valid->validation($postData);
 
-                $this->redirect('/login');
+            if(!empty($errors)){
+                Session::sessionInit('errors', $errors);
             }
-            else{
-                Session::sessionInit('errors', 'Пароли должны совпадать');
+            else {
+                if(Registration::confirmationPasswords($postData['password'], $postData['password_confirm'])) {
+
+                    $postData['password'] = Registration::hashPassword($postData['password']);
+                    $postData['token'] = Registration::tokenGeneration(36);
+                    $postData['status'] = 1;
+
+                    $user = User::add($postData);
+
+                    $this->redirect('/login');
+                }
+                else{
+                    Session::sessionInit('errors', ['Пароли должны совпадать']);
+                }
             }
+
         }
         $this->redirect('/register');
     }

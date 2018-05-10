@@ -17,4 +17,9 @@ class Registration
         return ($pass === $passConfirm);
     }
 
+    public static function tokenGeneration($length)
+    {
+        return substr(str_shuffle(str_repeat($x='0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil($length/strlen($x)) )),1,$length);
+    }
+
 }
