@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb7bf679-f035-48e7-80fa-49d452b7bde3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/AuthController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/controllers/RegisterController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/User.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/pages/register.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/Auth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/Registration.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/Session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/content.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/PageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/bootstrap.php" beforeDir="false" afterPath="$PROJECT_DIR$/conf/bootstrap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/AppController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/BaseController.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/BaseController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/BaseModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/BaseModel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/View.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,20 +27,20 @@
       <file leaf-file-name="RegisterController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/RegisterController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-142">
-              <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+            <state relative-caret-position="440">
+              <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
               <folding>
-                <element signature="e#36#60#0#PHP" expanded="true" />
+                <element signature="e#35#59#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Session.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Session.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/Session.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
+            <state relative-caret-position="242">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -61,8 +48,26 @@
       <file leaf-file-name="register.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/pages/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+            <state relative-caret-position="44">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/main.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="View.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/core/View.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -72,15 +77,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="198">
               <caret line="9" column="46" lean-forward="true" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/bootstrap.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="85" selection-start-line="9" selection-start-column="85" selection-end-line="9" selection-end-column="85" />
             </state>
           </provider>
         </entry>
@@ -132,7 +128,6 @@
         <option value="$PROJECT_DIR$/core/Request.php" />
         <option value="$PROJECT_DIR$/app/views/pages/home.php" />
         <option value="$PROJECT_DIR$/conf/db.php" />
-        <option value="$PROJECT_DIR$/core/View.php" />
         <option value="$PROJECT_DIR$/core/Errors.php" />
         <option value="$PROJECT_DIR$/core/AppConroller.php" />
         <option value="$PROJECT_DIR$/conf/autoload.php" />
@@ -144,17 +139,18 @@
         <option value="$PROJECT_DIR$/templates/content.php" />
         <option value="$PROJECT_DIR$/public/css/custom.css" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/templates/main.php" />
         <option value="$PROJECT_DIR$/core/AppController.php" />
         <option value="$PROJECT_DIR$/core/BaseController.php" />
         <option value="$PROJECT_DIR$/conf/bootstrap.php" />
-        <option value="$PROJECT_DIR$/app/views/pages/register.php" />
         <option value="$PROJECT_DIR$/annayu_bistro.sql" />
         <option value="$PROJECT_DIR$/core/BaseModel.php" />
         <option value="$PROJECT_DIR$/app/models/User.php" />
         <option value="$PROJECT_DIR$/core/Registration.php" />
-        <option value="$PROJECT_DIR$/app/controllers/RegisterController.php" />
         <option value="$PROJECT_DIR$/core/Session.php" />
+        <option value="$PROJECT_DIR$/app/controllers/RegisterController.php" />
+        <option value="$PROJECT_DIR$/app/views/pages/register.php" />
+        <option value="$PROJECT_DIR$/templates/main.php" />
+        <option value="$PROJECT_DIR$/core/View.php" />
       </list>
     </option>
   </component>
@@ -193,20 +189,17 @@
             <path>
               <item name="portalNes" type="b2602c69:ProjectViewProjectNode" />
               <item name="portalNes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="portalNes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portalNes" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="pages" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="conf" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="portalNes" type="b2602c69:ProjectViewProjectNode" />
               <item name="portalNes" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="portalNes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portalNes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="templates" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -216,7 +209,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bistro2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../bistro" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -253,12 +246,12 @@
       <option name="presentableId" value="Default" />
       <updated>1525418564385</updated>
       <workItem from="1525418566028" duration="17684000" />
-      <workItem from="1525440425190" duration="901000" />
+      <workItem from="1525440425190" duration="2542000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18585000" />
+    <option name="totallyTimeSpent" value="20226000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1082" extended-state="6" />
@@ -304,7 +297,7 @@
         <state relative-caret-position="396">
           <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
           <folding>
-            <element signature="e#36#60#0#PHP" expanded="true" />
+            <element signature="e#35#59#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -373,13 +366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/View.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/DataBase.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="834">
@@ -419,13 +405,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/main.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="86" column="44" lean-forward="true" selection-start-line="86" selection-start-column="44" selection-end-line="86" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -471,13 +450,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/bootstrap.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="85" selection-start-line="9" selection-start-column="85" selection-end-line="9" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/BaseModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -492,10 +464,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/pages/register.php">
+    <entry file="file://$PROJECT_DIR$/core/Session.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="33" selection-start-line="19" selection-start-column="33" selection-end-line="19" selection-end-column="33" />
+        <state relative-caret-position="242">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conf/bootstrap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="85" selection-start-line="9" selection-start-column="85" selection-end-line="9" selection-end-column="85" />
         </state>
       </provider>
     </entry>
@@ -506,20 +485,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/RegisterController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-142">
-          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        <state relative-caret-position="440">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
           <folding>
-            <element signature="e#36#60#0#PHP" expanded="true" />
+            <element signature="e#35#59#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/Session.php">
+    <entry file="file://$PROJECT_DIR$/app/views/pages/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="44">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
         </state>
       </provider>
     </entry>

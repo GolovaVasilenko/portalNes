@@ -61,7 +61,9 @@
             </p>
         </div>
     </section-->
+
     <div class="container">
+
     <?=$content;?>
     </div>
 </main>

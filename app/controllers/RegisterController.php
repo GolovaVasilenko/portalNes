@@ -5,6 +5,7 @@ namespace app\controllers;
 use core\BaseController;
 use app\models\User;
 use core\Registration;
+use core\Session;
 
 class RegisterController extends BaseController
 {
@@ -19,12 +20,13 @@ class RegisterController extends BaseController
             if(Registration::confirmationPasswords($postData['password'], $postData['password_confirm'])) {
                 $postData['password'] = Registration::hashPassword($postData['password']);
                 $user = User::add($postData);
+
                 $this->redirect('/login');
             }
             else{
-
+                Session::sessionInit('errors', 'Пароли должны совпадать');
             }
         }
-        $this->view->render('pages/register');
+        $this->redirect('/register');
     }
 }
