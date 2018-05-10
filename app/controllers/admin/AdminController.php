@@ -1,6 +1,6 @@
 <?php
 
-namespace app\controllers\Admin;
+namespace app\controllers\admin;
 
 use core\BaseController;
 use core\Auth;
@@ -12,10 +12,13 @@ class AdminController extends BaseController
         if(!Auth::isAuth()){
             $this->redirect('/login');
         }
+        parent::__construct();
+        $this->view->layout = 'admin';
     }
 
     public function indexAction()
     {
+        $this->view->render('admin/dashboard/index');
 
     }
 }

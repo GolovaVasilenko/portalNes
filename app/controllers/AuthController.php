@@ -26,7 +26,7 @@ class AuthController extends BaseController
                 $user = Auth::checkUser($postData['email'], $postData['password']);
                 if(!empty($user)){
                     Session::sessionInit('currentUser', $user->id);
-                    $this->redirect('/');
+                    $this->redirect('/admin');
                 }
                 else {
                     Session::sessionInit('errors', ['Не верный логин или пароль']);
@@ -37,5 +37,10 @@ class AuthController extends BaseController
         $this->view->render('pages/auth');
     }
 
+    public function logoutAction()
+    {
+        Session::sessionRemove('currentUser');
+        $this->redirect('/');
+    }
 
 }
