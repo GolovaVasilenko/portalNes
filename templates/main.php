@@ -30,8 +30,12 @@
                     <ul class="list-unstyled">
                         <li><a href="#" class="text-white">Follow on Twitter</a></li>
                         <li><a href="#" class="text-white">Like on Facebook</a></li>
-                        <li><a href="/login" class="text-white">Login</a></li>
-                        <li><a href="/register" class="text-white">Registration</a></li>
+                        <?php if(!\core\Auth::isAuth()):?>
+                            <li><a href="/login" class="text-white">Login</a></li>
+                            <li><a href="/register" class="text-white">Registration</a></li>
+                        <?php else:?>
+                            <li><a href="/admin" class="text-white">Dashboard</a></li>
+                        <?php endif; ?>
                     </ul>
                 </div>
             </div>
