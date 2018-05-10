@@ -68,9 +68,7 @@
     </section>
 
     <div class="container">
-    <?php if(\core\Session::getValue('errors')): ?>
-        <?php \core\Session::flashErrors();?>
-    <?php endif; ?>
+    <?php include_once 'flash.php';?>
     <?=$content;?>
     </div>
 </main>

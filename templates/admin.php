@@ -115,7 +115,7 @@
         </nav>
         <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
             <h1 class="page-header">Dashboard</h1>
-
+            <?php include_once 'flash.php'; ?>
             <?=$content;?>
 
         </main>

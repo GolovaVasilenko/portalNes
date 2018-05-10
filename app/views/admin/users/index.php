@@ -1,4 +1,5 @@
 <h2 class="sub-header">Section Users</h2>
+<a href="/admin/user/add" type="button" class="btn btn-info">Добавить нового пользователя</a><br>
 <div class="table-responsive">
     <?php if(!empty($users)):?>
     <table class="table table-striped">
