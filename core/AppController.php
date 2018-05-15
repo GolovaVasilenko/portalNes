@@ -14,6 +14,7 @@ class AppController extends BaseController
     {
         $this->route = $route;
     }
+
     protected function unserializeData($str)
     {
         //title=Menu1&visible=1
@@ -25,6 +26,7 @@ class AppController extends BaseController
         }
         return $result;
     }
+
     protected function restrictArray($array = [])
     {
         $result = [];
@@ -35,6 +37,7 @@ class AppController extends BaseController
         }
         return $result;
     }
+
     public static function start($query)
     {
         Routes::dispatch($query);

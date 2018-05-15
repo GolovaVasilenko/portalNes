@@ -8,14 +8,17 @@ class Routes
     protected static $routes = [];
     protected static $currentRoute = [];
     protected static $currentPath = "";
+
     public static function add($regexp, $route =[])
     {
         self::$routes[$regexp] = $route;
     }
+
     protected static function matchRoute($uri)
     {
         foreach(self::$routes as $pattern => $route){
             if(preg_match("~$pattern~i", $uri, $matches)){
+                //var_dump($matches); exit;
                 self::$currentPath = $matches[0];
                 foreach($matches as $k => $v) {
                     if (is_string($k)) {
@@ -31,6 +34,7 @@ class Routes
         }
         return false;
     }
+
     public static function dispatch($uri)
     {
         if(self::matchRoute($uri)){
@@ -42,7 +46,16 @@ class Routes
                 $ctrlObj = new $controller(self::$currentRoute);
                 $action = self::lowerCamelCase(self::$currentRoute['action']) . 'Action';
                 if(method_exists($ctrlObj, $action)){
-                    $ctrlObj->$action();
+
+                    if(isset(self::$currentRoute['id'])){
+                        $ctrlObj->$action(self::$currentRoute['id']);
+                    }
+                    else if(isset(self::$currentRoute['slug'])){
+                        $ctrlObj->$action(self::$currentRoute['slug']);
+                    }
+                    else {
+                        $ctrlObj->$action();
+                    }
                     //return call_user_func_array($ctrlObj, $action, $args = []);
                 }else{
                     echo "Action $controller::$action Not found";

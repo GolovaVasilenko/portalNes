@@ -19,7 +19,7 @@
             <td><?=$user->login;?></td>
             <td><?=$user->email;?></td>
             <td><?=$user->status;?></td>
-            <td><a href="#">edit</a> <a href="#">delete</a></td>
+            <td><a href="/admin/user/edit/<?=$user->id;?>">edit</a> <a href="/admin/user/delete/<?=$user->id;?>">delete</a></td>
         </tr>
         <?php endforeach;?>
         </tbody>
