@@ -87,8 +87,10 @@ class UserController extends AdminController
         $this->redirect('/admin/user');
     }
 
-    public function deleteArtion($id)
+    public function deleteAction($id)
     {
-        return User::removeById($id);
+        User::removeById($id);
+
+        $this->redirect('/admin/user');
     }
 }

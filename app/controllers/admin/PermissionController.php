@@ -4,6 +4,7 @@ namespace app\controllers\admin;
 
 
 use app\models\Permission;
+use core\Session;
 
 class PermissionController extends AdminController
 {
@@ -29,6 +30,20 @@ class PermissionController extends AdminController
             $perm->save();
 
         }
+        $this->redirect('/admin/permission');
+    }
+
+    public function deleteAction($id)
+    {
+        $perm = Permission::findById($id);
+
+        if(!$perm){
+            Session::sessionInit('errors', ['Элемент с такими параметрами не найден']);
+            $this->redirect('/admin/permission');
+        }
+
+        $perm->delete();
+
         $this->redirect('/admin/permission');
     }
 }

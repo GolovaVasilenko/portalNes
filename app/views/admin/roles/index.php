@@ -1,4 +1,4 @@
-<h2 class="sub-header">Привилегии для пользователей</h2>
+<h2 class="sub-header">Роли для пользователей</h2>
 <a href="/admin/permission/add" type="button" class="btn btn-info">Добавить привилегию</a><br>
 <div class="table-responsive">
     <table class="table table-striped">
@@ -7,19 +7,18 @@
             <th>#</th>
             <th>Name</th>
             <th>Action</th>
-
         </tr>
         </thead>
         <tbody>
-        <?php foreach($permissions as $perm):?>
-        <tr>
-            <td><?=$perm->id;?></td>
-            <td><?=$perm->name;?></td>
-            <td>
-                <a href="/admin/permission/delete/<?=$perm->id;?>">delete</a>
-            </td>
+        <?php foreach($roles as $role):?>
+            <tr>
+                <td><?=$role->id;?></td>
+                <td><?=$role->name;?></td>
+                <td>
+                    <a href="/admin/role/delete/<?=$role->id;?>">delete</a>
+                </td>
 
-        </tr>
+            </tr>
         <?php endforeach;?>
         </tbody>
     </table>
