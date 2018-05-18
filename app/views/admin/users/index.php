@@ -9,6 +9,7 @@
             <th>Login</th>
             <th>Email</th>
             <th>status</th>
+            <th>roles</th>
             <th>actions</th>
         </tr>
         </thead>
@@ -19,6 +20,11 @@
             <td><?=$user->login;?></td>
             <td><?=$user->email;?></td>
             <td><?=$user->status;?></td>
+            <td>
+                <?php foreach($user->getRoles() as $role):?>
+                    | <?=$role->name;?> |
+                <?php endforeach;?>
+            </td>
             <td>
                 <a href="/admin/user/edit/<?=$user->id;?>">edit</a> |
                 <a href="/admin/user/status/<?=$user->id;?>">

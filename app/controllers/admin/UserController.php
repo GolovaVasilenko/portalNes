@@ -2,6 +2,7 @@
 
 namespace app\controllers\admin;
 
+use app\models\Role;
 use app\models\User;
 use core\Errors;
 use core\Session;
@@ -18,7 +19,11 @@ class UserController extends AdminController
 
     public function addAction()
     {
-        $this->view->render('admin/users/add');
+        $roles = Role::findAll();
+
+        $this->view->render('admin/users/add', [
+            'roles' => $roles
+        ]);
     }
 
     public function storeAction()
@@ -47,19 +52,23 @@ class UserController extends AdminController
 
     public function editAction($id)
     {
-        $user = User::findById($id);
-        if(!$user){
-            Session::sessionInit('errors', ['Пользователь не найден']);
-            $this->redirect('/admin/user');
-        }
+        $roles = Role::findAll();
 
-        $this->view->render('admin/users/edit', ['user' => $user]);
+        $user = $this->getElementById($id, User::class, 'user');
+
+        $activeRoles = $user->getRoles();
+
+        $this->view->render('admin/users/edit', [
+            'user' => $user,
+            'roles' => $roles,
+            'activeRoles' => $activeRoles
+        ]);
     }
 
     public function updateAction($id)
     {
         if($postData = $this->request->ispost()){
-            $user = User::findById($id);
+            $user = $this->getElementById($id, User::class, 'user');
             $valid = new Validator([
                 'login' => 'required',
                 'email' => 'email',
@@ -74,7 +83,12 @@ class UserController extends AdminController
 
             $user->login = $postData['login'];
             $user->email = $postData['email'];
+            $user->status = $postData['status'];
             $user->save();
+
+            if(!empty($postData['roles']))
+                $user->setConnection($id, $postData['roles']);
+
             $this->redirect('/admin/user/edit/'. $id);
         }
     }
