@@ -3,6 +3,7 @@
 namespace app\models;
 
 use core\BaseModel;
+use core\DataBase;
 
 class User extends BaseModel
 {
@@ -23,7 +24,7 @@ class User extends BaseModel
         return $user;
     }
 
-    public function removeById($id)
+    public static function removeById($id)
     {
         $user = self::findById($id);
 
@@ -32,7 +33,7 @@ class User extends BaseModel
         }
     }
 
-    public function removeByEmail($email)
+    public static function removeByEmail($email)
     {
         $user = self::findByColumn('email', $email);
 
@@ -45,4 +46,26 @@ class User extends BaseModel
     {
         return User::where(['email' => $email, 'password' => $password]);
     }
+
+    public static function toggleStatus($id)
+    {
+        $user = self::findById($id);
+
+        $user->status = $user->status ? 0 : 1;
+
+        return $user;
+    }
+
+    public function getRoles()
+    {
+        $db = DataBase::getInstance();
+
+        $sql = "SELECT r.id, r.name FROM roles r 
+                INNER JOIN user_roles ur ON r.id = ur.role_id 
+                INNER JOIN users u ON u.id = ur.user_id 
+                WHERE u.id = :id";
+
+        return $db->query($sql, get_called_class() , ['id' => $this->id]);
+    }
+
 }

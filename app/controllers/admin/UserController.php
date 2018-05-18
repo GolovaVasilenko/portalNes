@@ -1,8 +1,6 @@
 <?php
 
-
 namespace app\controllers\admin;
-
 
 use app\models\User;
 use core\Errors;
@@ -51,7 +49,8 @@ class UserController extends AdminController
     {
         $user = User::findById($id);
         if(!$user){
-            throw new Errors('Станица не найдена');
+            Session::sessionInit('errors', ['Пользователь не найден']);
+            $this->redirect('/admin/user');
         }
 
         $this->view->render('admin/users/edit', ['user' => $user]);
@@ -75,7 +74,21 @@ class UserController extends AdminController
 
             $user->login = $postData['login'];
             $user->email = $postData['email'];
+            $user->save();
             $this->redirect('/admin/user/edit/'. $id);
         }
+    }
+
+    public function statusAction($id)
+    {
+        $user = User::toggleStatus($id);
+        $user->save();
+
+        $this->redirect('/admin/user');
+    }
+
+    public function deleteArtion($id)
+    {
+        return User::removeById($id);
     }
 }

@@ -19,7 +19,14 @@
             <td><?=$user->login;?></td>
             <td><?=$user->email;?></td>
             <td><?=$user->status;?></td>
-            <td><a href="/admin/user/edit/<?=$user->id;?>">edit</a> <a href="/admin/user/delete/<?=$user->id;?>">delete</a></td>
+            <td>
+                <a href="/admin/user/edit/<?=$user->id;?>">edit</a> |
+                <a href="/admin/user/status/<?=$user->id;?>">
+                    <?php if($user->status):?>bun<?php else:?>activate<?php endif;?>
+                </a> |
+                <a href="/admin/user/delete/<?=$user->id;?>">delete</a>
+
+            </td>
         </tr>
         <?php endforeach;?>
         </tbody>

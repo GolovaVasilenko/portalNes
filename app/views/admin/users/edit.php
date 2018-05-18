@@ -1,5 +1,5 @@
 <div class="form-container">
-    <form method="post" action="/admin/user/store/<?=$user->id?>">
+    <form method="post" action="/admin/user/update/<?=$user->id?>">
         <div class="form-group">
             <label for="login">Login</label>
             <input type="text" class="form-control" name="login" id="login" value="<?=$user->login;?>" placeholder="">

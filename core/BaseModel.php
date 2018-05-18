@@ -75,6 +75,7 @@ class BaseModel
     {
         $columns = [];
         $values = [];
+
         foreach($this as $k => $v)
         {
             if('id' == $k)
@@ -84,6 +85,7 @@ class BaseModel
         }
         $sql = 'INSERT INTO ' . static::TABLE . ' (' . implode(', ', $columns) . ') VALUES (' . implode(', ', array_keys($values)) . ')';
         $db = DataBase::getInstance();
+
         $result = $db->execute($sql, $values);
         if($result){
             $id = $db->getDbh()->lastInsertId();
@@ -98,17 +100,19 @@ class BaseModel
     {
         $ins = [];
         $dataExec = [];
+
         foreach($this as $key => $val)
         {
-            if(!empty($val))
+            if(null !== $val)
                 $dataExec[':' . $key] = $val;
             if('id' == $key || null === $val){
                 continue;
             }
-            if(!empty($val))
+            if(null !== $val)
                 $ins[] = $key . ' = :' .$key;
         }
         $sql = 'UPDATE ' . static::TABLE . ' SET ' . implode(', ', $ins) . ' WHERE id = :id';
+
         $db = DataBase::getInstance();
         return $db->execute($sql, $dataExec);
     }

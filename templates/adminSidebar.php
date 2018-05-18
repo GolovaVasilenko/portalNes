@@ -14,10 +14,10 @@
             </a>
             <ul class="nav flex-column">
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/roles">Роли</a>
+                    <a class="nav-link" href="/admin/role">Роли</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/permissions">Привилегии</a>
+                    <a class="nav-link" href="/admin/permission">Привилегии</a>
                 </li>
             </ul>
         </li>
