@@ -32,6 +32,7 @@ class RoleController extends AdminController
     {
         if($post = $this->request->ispost()) {
             $role = new Role();
+
             $role->name = $post['name'];
 
             $id = $role->save();
@@ -45,13 +46,9 @@ class RoleController extends AdminController
 
     public function editAction($id)
     {
-        $role = Role::findById($id);
         $permissions = Permission::findAll();
 
-        if(!$role){
-            Session::sessionInit('errors', ['Элемент с такими параметрами не найден']);
-            $this->redirect('/admin/role');
-        }
+        $role = $this->getElementById($id, Role::class, 'role');
 
         $this->view->render('admin/roles/edit', [
             'permissions' => $permissions,
@@ -62,11 +59,27 @@ class RoleController extends AdminController
 
     public function updateAction($id)
     {
+        if($post = $this->request->ispost()) {
 
+            $role = $this->getElementById($id, Role::class, 'role');
+
+            $role->name = $post['name'];
+
+            $role->save();
+
+            if(!empty($post['perm']))
+                $role->setConnection($id, $post['perm']);
+
+        }
+        $this->redirect('/admin/role');
     }
 
     public function deleteAction($id)
     {
+        $role = $this->getElementById($id, Role::class, 'role');
 
+        $role->delete();
+
+        $this->redirect('/admin/role');
     }
 }

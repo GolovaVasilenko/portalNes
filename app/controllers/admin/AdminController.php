@@ -4,6 +4,7 @@ namespace app\controllers\admin;
 
 use core\BaseController;
 use core\Auth;
+use core\Session;
 
 class AdminController extends BaseController
 {
@@ -20,5 +21,15 @@ class AdminController extends BaseController
     {
         $this->view->render('admin/dashboard/index');
 
+    }
+
+    protected function getElementById($id, $class, $redirect = '')
+    {
+        $obj = $class::findById($id);
+        if(!$obj){
+            Session::sessionInit('errors', ['Элемент с такими параметрами не найден']);
+            $this->redirect('/admin/' . $redirect);
+        }
+        return $obj;
     }
 }

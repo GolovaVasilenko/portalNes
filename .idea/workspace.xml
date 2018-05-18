@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb7bf679-f035-48e7-80fa-49d452b7bde3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/views/admin/roles/edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/PermissionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/PermissionController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/admin/RoleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/RoleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Role.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/Role.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/roles/add.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/roles/add.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/roles/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/roles/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Role.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Role.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/Role.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+            <state relative-caret-position="-32">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#31#50#0#PHP" expanded="true" />
               </folding>
@@ -30,14 +27,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoleController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RoleController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/admin/RoleController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="35" selection-start-line="35" selection-end-line="35" />
+            <state relative-caret-position="462">
+              <caret line="78" column="61" selection-start-line="78" selection-start-column="61" selection-end-line="78" selection-end-column="61" />
               <folding>
                 <element signature="e#42#68#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/admin/AdminController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -111,7 +117,6 @@
         <option value="$PROJECT_DIR$/app/controllers/PageController.php" />
         <option value="$PROJECT_DIR$/app/controllers/Admin/AdminController.php" />
         <option value="$PROJECT_DIR$/app/views/admin/dashboard/index.php" />
-        <option value="$PROJECT_DIR$/app/controllers/admin/AdminController.php" />
         <option value="$PROJECT_DIR$/public/css/dashboard.css" />
         <option value="$PROJECT_DIR$/app/controllers/AuthController.php" />
         <option value="$PROJECT_DIR$/app/controllers/admin/PostController.php" />
@@ -135,13 +140,14 @@
         <option value="$PROJECT_DIR$/core/DataBase.php" />
         <option value="$PROJECT_DIR$/core/BaseModel.php" />
         <option value="$PROJECT_DIR$/app/controllers/admin/UserController.php" />
-        <option value="$PROJECT_DIR$/app/controllers/admin/PermissionController.php" />
         <option value="$PROJECT_DIR$/app/views/admin/permissions/index.php" />
         <option value="$PROJECT_DIR$/app/views/admin/roles/add.php" />
         <option value="$PROJECT_DIR$/app/views/admin/roles/index.php" />
         <option value="$PROJECT_DIR$/app/views/admin/roles/edit.php" />
-        <option value="$PROJECT_DIR$/app/controllers/admin/RoleController.php" />
         <option value="$PROJECT_DIR$/app/models/Role.php" />
+        <option value="$PROJECT_DIR$/app/controllers/admin/PermissionController.php" />
+        <option value="$PROJECT_DIR$/app/controllers/admin/AdminController.php" />
+        <option value="$PROJECT_DIR$/app/controllers/admin/RoleController.php" />
       </list>
     </option>
   </component>
@@ -306,12 +312,12 @@
       <workItem from="1526382951432" duration="4797000" />
       <workItem from="1526558635444" duration="7106000" />
       <workItem from="1526626808772" duration="12422000" />
-      <workItem from="1526646836441" duration="687000" />
+      <workItem from="1526646836441" duration="3027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73866000" />
+    <option name="totallyTimeSpent" value="76206000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-2" width="1920" height="1082" extended-state="6" />
@@ -479,13 +485,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/admin/AdminController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/admin/CategoryController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -640,13 +639,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/admin/PermissionController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/admin/UserController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="747">
@@ -675,6 +667,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/Role.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-32">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#31#50#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/PermissionController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="e#42#68#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/admin/roles/edit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -682,22 +694,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/admin/RoleController.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-          <folding>
-            <element signature="e#42#68#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="475">
+          <caret line="27" column="37" lean-forward="true" selection-start-line="27" selection-start-column="37" selection-end-line="27" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/Role.php">
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/RoleController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        <state relative-caret-position="462">
+          <caret line="78" column="61" selection-start-line="78" selection-start-column="61" selection-end-line="78" selection-end-column="61" />
           <folding>
-            <element signature="e#31#50#0#PHP" expanded="true" />
+            <element signature="e#42#68#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

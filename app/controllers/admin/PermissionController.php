@@ -35,12 +35,7 @@ class PermissionController extends AdminController
 
     public function deleteAction($id)
     {
-        $perm = Permission::findById($id);
-
-        if(!$perm){
-            Session::sessionInit('errors', ['Элемент с такими параметрами не найден']);
-            $this->redirect('/admin/permission');
-        }
+        $perm = $this->getElementById($id, Permission::class, 'permission');
 
         $perm->delete();
 
