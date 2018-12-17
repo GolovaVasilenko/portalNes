@@ -4,7 +4,6 @@ namespace app\controllers\admin;
 
 
 use app\models\Page;
-use core\Request;
 
 class PageController extends AdminController
 {
@@ -28,8 +27,19 @@ class PageController extends AdminController
         $this->redirect('/admin/page');
     }
 
-    public function editAction()
+    public function editAction($id)
     {
+        $this->view->render('admin/pages/edit', [
+            'page' => Page::findById($id)
+        ]);
+    }
 
+    public function updateAction()
+    {
+        $id = $this->request->post('id', null);
+        $modelPage = Page::findById($id);
+        $modelPage->dataInit($this->request->ispost());
+        $modelPage->save();
+        $this->redirect('/admin/page/edit/' . $id);
     }
 }

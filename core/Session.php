@@ -33,4 +33,15 @@ class Session
         echo $html;
 
     }
+
+    public static function flashSuccess()
+    {
+        $html = '<div class="alert alert-success">';
+        foreach($_SESSION['success'] as $item) {
+            $html .= '<p>' . $item . '</p>';
+        }
+        $html .= '</div>';
+        self::sessionRemove('success');
+        echo $html;
+    }
 }
