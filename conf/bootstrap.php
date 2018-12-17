@@ -11,7 +11,7 @@ Routes::add('^registeration$', ['controller' => 'register', 'action' => 'registr
 
 Routes::add('^(?P<directory>admin)$', ['controller' => 'admin', 'action' => 'index']);
 
-Routes::add('^(?P<directory>admin)/(?P<controller>[a-zA-Z\-]+)/?(?P<action>[a-zA-Z\-]+)?/?(?P<id>[1-9]+)?$');
+Routes::add('^(?P<directory>admin)/(?P<controller>[a-zA-Z\-]+)/?(?P<action>[a-zA-Z\-]+)?/?(?P<id>[0-9]+)?$');
 
 Routes::add('^(?P<controller>[a-zA-Z\-]+)/?(?P<action>[a-zA-Z\-]+)?/?(?P<slug>[a-zA-Z0-9\-]+)?$');
 

@@ -68,22 +68,27 @@ class Routes
             include "404.html";
         }
     }
+
     protected static function upperCamelCase($className)
     {
         return str_replace(' ', '', $className = ucwords(str_replace('-', ' ', $className)));
     }
+
     protected static function lowerCamelCase($name)
     {
         return lcfirst(self::upperCamelCase($name));
     }
+
     public static function getRoutes()
     {
         return self::$routes;
     }
+
     public static function getPath()
     {
         return self::$currentPath;
     }
+
     public static function getRoute()
     {
         return self::$currentRoute;
