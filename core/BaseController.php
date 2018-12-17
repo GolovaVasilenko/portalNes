@@ -7,6 +7,7 @@ namespace core;
 class BaseController
 {
     protected $view;
+    protected $request;
 
     public function __construct()
     {
