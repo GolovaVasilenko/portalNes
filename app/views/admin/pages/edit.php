@@ -1,4 +1,4 @@
-<h2 class="sub-header">Add New Page</h2>
+<h2 class="sub-header">Edit Page <?=isset($page->title) ? $page->title : '';?></h2>
 
 <div class="form-wrapper">
     <form action="/admin/page/update" method="post">

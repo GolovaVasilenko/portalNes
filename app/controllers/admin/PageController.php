@@ -4,6 +4,7 @@ namespace app\controllers\admin;
 
 
 use app\models\Page;
+use core\Session;
 
 class PageController extends AdminController
 {
@@ -24,6 +25,8 @@ class PageController extends AdminController
         $modelPage = new Page();
         $modelPage->dataInit($this->request->ispost());
         $modelPage->save();
+
+        Session::sessionInit('success', ['Создание новой страницы прошло успешно']);
         $this->redirect('/admin/page');
     }
 
@@ -40,6 +43,17 @@ class PageController extends AdminController
         $modelPage = Page::findById($id);
         $modelPage->dataInit($this->request->ispost());
         $modelPage->save();
+
+        Session::sessionInit('success', ['Редактирование страницы прошло успешно']);
         $this->redirect('/admin/page/edit/' . $id);
+    }
+
+    public function deleteAction($id)
+    {
+        $modelPage = Page::findById($id);
+        $modelPage->delete();
+
+        Session::sessionInit('success', ['Удаление страницы прошло успешно']);
+        $this->redirect('/admin/page');
     }
 }

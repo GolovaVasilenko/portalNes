@@ -19,7 +19,7 @@
                 <td><?=$page->slug;?></td>
                 <td>
                     <a class="btn btn-primary" href="/admin/page/edit/<?=$page->id;?>">edit</a>
-                    <a class="btn btn-danger" href="/admin/page/delete/<?=$page->id;?>">delete</a>
+                    <a class="btn btn-danger" onclick="removeItem(event)" href="/admin/page/delete/<?=$page->id;?>">delete</a>
                 </td>
             </tr>
             <?php endforeach;?>
@@ -29,3 +29,11 @@
         </tbody>
     </table>
 </div>
+<script>
+    function removeItem(e)
+    {
+        if(!confirm("Вы уверены в том что хотите удалить данный элемент?")) {
+            e.preventDefault();
+        }
+    }
+</script>
