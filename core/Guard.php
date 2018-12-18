@@ -4,27 +4,20 @@
 namespace core;
 
 
-use app\models\User;
-
 class Guard
 {
-    public $user;
-
-    public function __construct(User $user)
+    public static function can($rolesArray = array())
     {
-        $this->user = $user;
-    }
+        $user = Auth::getUser();
+        if($user) {
+            $roles = $user->getRoles();
 
-    public function can($rolesArray = array())
-    {
-        $roles = $this->user->getRoles();
-
-        foreach($roles as $value) {
-            if(in_array($value->name, $rolesArray)){
-                return true;
+            foreach($roles as $value) {
+                if(in_array($value->name, $rolesArray)){
+                    return true;
+                }
             }
         }
-
         return false;
     }
 

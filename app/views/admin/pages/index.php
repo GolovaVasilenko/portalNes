@@ -1,5 +1,5 @@
 <h2 class="sub-header">Pages List</h2>
-<a href="/admin/page/add" type="button" class="btn btn-info">Добавить нового пользователя</a><br>
+<a href="/admin/page/add" type="button" class="btn btn-info">Добавить новую страницу</a><br>
 <div class="table-responsive">
     <table class="table table-striped">
         <thead>
