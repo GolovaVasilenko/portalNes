@@ -1,0 +1,4 @@
+./conf/db.php
+./vendor
+./public/images
+./public/uploads
