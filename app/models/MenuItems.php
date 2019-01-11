@@ -13,4 +13,6 @@ class MenuItems extends BaseModel
     public $id;
     public $label;
     public $link;
+    public $position;
+
 }

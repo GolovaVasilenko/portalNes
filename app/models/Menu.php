@@ -12,4 +12,9 @@ class Menu extends BaseModel
     public $name;
 
     const TABLE = 'menus';
+
+    public function items()
+    {
+        return MenuItems::where(['menu_id' => $this->id]);
+    }
 }
