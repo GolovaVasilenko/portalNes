@@ -2,3 +2,4 @@
 ./vendor
 ./public/images
 ./public/uploads
+./.idea
