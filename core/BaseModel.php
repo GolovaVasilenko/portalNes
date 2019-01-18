@@ -44,9 +44,15 @@ class BaseModel
             return [];
     }
 
-    public static function where($columns)
+    public static function where($columns, $orders = null)
     {
         $cols = '';
+        $order = '';
+
+        if($orders) {
+            $order_col = array_keys($orders);
+            $order .= 'ORDER BY ' . $order_col[0] . ' ' . $orders[$order_col[0]];
+        }
 
         $keys = array_keys($columns);
 
@@ -61,11 +67,11 @@ class BaseModel
 
         $db = DataBase::getInstance();
 
-        $sql = 'SELECT * FROM ' . static::TABLE . ' WHERE ' . $cols;
+        $sql = 'SELECT * FROM ' . static::TABLE . ' WHERE ' . $cols . ' ' . $order;
 
         $res = $db->query($sql, get_called_class() , $columns);
-        if(!empty($res[0]))
-            return  $res[0];
+        if(!empty($res))
+            return  $res;
         else
             return [];
 

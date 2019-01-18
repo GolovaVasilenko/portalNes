@@ -12,9 +12,9 @@ class AdminController extends BaseController
     public function __construct()
     {
 
-        if(!Auth::isAuth() && !Guard::can(['manager', 'admin'])){
+        /*if(!Auth::isAuth() /*&& !Guard::can(['manager', 'admin'])){
             $this->redirect('/login');
-        }
+        }*/
         parent::__construct();
         $this->view->layout = 'admin';
 

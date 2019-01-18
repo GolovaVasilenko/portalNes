@@ -16,6 +16,9 @@
             <td><?=$menu->id?></td>
             <td><?=$menu->name?></td>
             <td>
+                <a class="btn btn-primary" href="/admin/menu/items/<?=$menu->id?>">Элементы меню</a>
+            </td>
+            <td>
                 <a class="btn btn-success" href="/admin/menu/add-item/<?=$menu->id?>">Добавить Элемент Меню</a>
             </td>
             <td>

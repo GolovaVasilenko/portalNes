@@ -58,16 +58,31 @@ class MenuController extends AdminController
         $this->redirect('/admin/menu');
     }
 
+    public function itemsAction($id)
+    {
+        $menu = Menu::findById($id);
+
+        $menu_items = $menu->tree();
+        $this->view->render('admin/menu/items', ['menu' => $menu, 'menu_items' => $menu_items]);
+    }
+
     public function addItemAction($id)
     {
         $menu = Menu::findById($id);
-        $menu_items = $menu->items();
+
+        $menu_items = $menu->tree();
+
         $this->view->render('admin/menu/add-item', ['menu_id' => $id, 'menu_items' => $menu_items]);
     }
 
     public function storeItemAction()
     {
         $model = new MenuItems();
+        $post = $this->request->ispost();
+        $model->dataInit($post);
+        $model->save();
 
+        Session::sessionInit('success', ['"Элемент меню добавлен успешно']);
+        $this->redirect('/admin/menu/items/' . $post['menu_id']);
     }
 }
