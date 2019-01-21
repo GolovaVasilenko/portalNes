@@ -1,10 +1,13 @@
 jQuery(document).ready(function($){
 
-    $('.dd').nestable('serialize');
+    $('.dd').nestable();
 
     $('.dd').on('change', function() {
         var li = $(this).find('li');
-        console.log(li);
+        $.each(li , function(i, v) {
+            console.log(i, v);
+        });
+        //console.log(li);
     });
 
 

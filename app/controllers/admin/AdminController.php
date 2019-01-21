@@ -11,7 +11,7 @@ class AdminController extends BaseController
 {
     public function __construct()
     {
-
+        var_dump(Guard::can(['manager', 'admin']));
         if(!Auth::isAuth() && Guard::can(['manager', 'admin'])){
             $this->redirect('/login');
         }
