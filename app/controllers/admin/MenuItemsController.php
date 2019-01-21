@@ -11,6 +11,7 @@ class MenuItemsController extends AdminController
     {
         $array = $this->request->isPost();
         $items = json_decode($array['output']);
+
         $this->setPosition($items);
     }
 
@@ -20,15 +21,14 @@ class MenuItemsController extends AdminController
 
         foreach($arrayData as $item) {
             $model = MenuItems::findById($item->id);
-            if(isset($model->children)) {
-                $this->setPosition($model->children, $item->id);
-            }
-            else {
-               return;
-            }
             $model->position = $count++;
             $model->parent_id = $parent;
+
             $model->save();
+            if(isset($item->children)) {
+                $this->setPosition($item->children, $item->id);
+            }
+
         }
 
     }

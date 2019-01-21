@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb7bf679-f035-48e7-80fa-49d452b7bde3" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/public/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/AdminController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/admin/MenuItemsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/MenuItemsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/menu/items.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/menu/items.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/widgets/Menu/tpl/menu_nestable_tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/widgets/Menu/tpl/menu_nestable_tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/admin/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuItemsController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MenuItemsController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/admin/MenuItemsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+            <state relative-caret-position="241">
+              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -80,7 +73,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu_nestable_tpl.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="menu_nestable_tpl.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/widgets/Menu/tpl/menu_nestable_tpl.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="38">
@@ -159,9 +152,9 @@
         <option value="$PROJECT_DIR$/public/js/jquery.js" />
         <option value="$PROJECT_DIR$/templates/admin.php" />
         <option value="$PROJECT_DIR$/public/admin/js/scripts.js" />
-        <option value="$PROJECT_DIR$/app/controllers/admin/MenuItemsController.php" />
         <option value="$PROJECT_DIR$/app/views/admin/menu/items.php" />
         <option value="$PROJECT_DIR$/app/widgets/Menu/tpl/menu_nestable_tpl.php" />
+        <option value="$PROJECT_DIR$/app/controllers/admin/MenuItemsController.php" />
       </list>
     </option>
   </component>
@@ -331,18 +324,18 @@
       <workItem from="1547737395720" duration="647000" />
       <workItem from="1547798823288" duration="24649000" />
       <workItem from="1548060121864" duration="5055000" />
-      <workItem from="1548069689727" duration="10824000" />
+      <workItem from="1548069689727" duration="11520000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155188000" />
+    <option name="totallyTimeSpent" value="155884000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24322917" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24322917" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -351,7 +344,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2489712" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2489712" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -705,13 +698,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/admin/MenuItemsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/MenuItems.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -730,6 +716,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/MenuItemsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
         </state>
       </provider>
     </entry>
