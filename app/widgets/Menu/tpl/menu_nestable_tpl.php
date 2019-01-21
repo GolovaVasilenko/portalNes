@@ -1,6 +1,6 @@
 <li class="dd-item" data-id="<?=$category->id?>" data-position="<?=$category->position?>">
     <div class="dd-handle">
-    <?=$category->label?>
+    <?=$category->label . ' pos- ' . $category->position;?>
     </div>
     <?php if(isset($category->children)):?>
         <ol class="dd-list">

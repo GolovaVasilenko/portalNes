@@ -1,4 +1,4 @@
-<h2><?=$menu->name;?></h2>
+<h2><?=$menu->name ;?></h2>
 
 <div id="menu-tree" class="menu-items nestable-lists">
     <div class="dd" id="nestable">
