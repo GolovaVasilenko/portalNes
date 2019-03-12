@@ -10,6 +10,7 @@ use core\Session;
 
 class MenuController extends AdminController
 {
+    
     public function indexAction()
     {
         $menus = Menu::findAll();
@@ -84,5 +85,23 @@ class MenuController extends AdminController
 
         Session::sessionInit('success', ['"Элемент меню добавлен успешно']);
         $this->redirect('/admin/menu/items/' . $post['menu_id']);
+    }
+
+    public function editItemAction($id)
+    {
+        $item = MenuItems::findById($id);
+        $menu = Menu::findById($item->menu_id);
+        $menu_items = $menu->tree();
+        $this->view->render('/admin/menu/edit-item', ['menu_id' => $menu->id, 'menu_items' => $menu_items, 'item' => $item]);
+    }
+
+    public function updateItemAction()
+    {
+
+    }
+
+    public function deleteItemAction($id)
+    {
+
     }
 }

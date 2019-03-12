@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb7bf679-f035-48e7-80fa-49d452b7bde3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/app/controllers/admin/MenuItemsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/MenuItemsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/admin/menu/edit-item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/admin/MenuController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/admin/MenuController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/admin/menu/add-item.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/menu/add-item.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/widgets/Menu/tpl/menu_nestable_tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/widgets/Menu/tpl/menu_nestable_tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/widgets/Menu/tpl/menu_options_tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/widgets/Menu/tpl/menu_options_tpl.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/admin/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/admin/js/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,11 +27,35 @@
       <file leaf-file-name="MenuController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/admin/MenuController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
-              <folding>
-                <element signature="e#43#63#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="317">
+              <caret line="93" column="36" selection-start-line="93" selection-start-column="36" selection-end-line="93" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="edit-item.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/admin/menu/edit-item.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="152">
+              <caret line="8" column="111" selection-start-line="8" selection-start-column="111" selection-end-line="8" selection-end-column="111" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="menu_options_tpl.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/widgets/Menu/tpl/menu_options_tpl.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="142" selection-start-column="142" selection-end-column="142" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MenuWidget.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/widgets/Menu/MenuWidget.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="57">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
         </entry>
@@ -37,29 +69,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MenuItemsController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MenuItemsController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/admin/MenuItemsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
+            <state relative-caret-position="266">
               <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/admin.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="57" column="67" selection-start-line="57" selection-start-column="67" selection-end-line="57" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="items.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/admin/menu/items.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="19" selection-start-column="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -67,17 +81,17 @@
       <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/admin/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+            <state relative-caret-position="494">
+              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="menu_nestable_tpl.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/widgets/Menu/tpl/menu_nestable_tpl.php">
+      <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/admin/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+            <state relative-caret-position="550">
+              <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -104,7 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/views/admin/permissions/index.php" />
         <option value="$PROJECT_DIR$/app/views/admin/roles/add.php" />
         <option value="$PROJECT_DIR$/app/views/admin/roles/index.php" />
         <option value="$PROJECT_DIR$/app/views/admin/roles/edit.php" />
@@ -142,19 +155,20 @@
         <option value="$PROJECT_DIR$/app/models/MenuItems.php" />
         <option value="$PROJECT_DIR$/app/models/Menu.php" />
         <option value="$PROJECT_DIR$/core/BaseModel.php" />
-        <option value="$PROJECT_DIR$/app/controllers/admin/MenuController.php" />
         <option value="$PROJECT_DIR$/app/widgets/Menu/tpl/menu_tpl.php" />
-        <option value="$PROJECT_DIR$/app/widgets/Menu/MenuWidget.php" />
-        <option value="$PROJECT_DIR$/app/views/admin/menu/add-item.php" />
-        <option value="$PROJECT_DIR$/app/widgets/Menu/tpl/menu_options_tpl.php" />
-        <option value="$PROJECT_DIR$/public/admin/css/custom.css" />
         <option value="$PROJECT_DIR$/app/controllers/admin/AdminController.php" />
         <option value="$PROJECT_DIR$/public/js/jquery.js" />
-        <option value="$PROJECT_DIR$/templates/admin.php" />
-        <option value="$PROJECT_DIR$/public/admin/js/scripts.js" />
         <option value="$PROJECT_DIR$/app/views/admin/menu/items.php" />
-        <option value="$PROJECT_DIR$/app/widgets/Menu/tpl/menu_nestable_tpl.php" />
         <option value="$PROJECT_DIR$/app/controllers/admin/MenuItemsController.php" />
+        <option value="$PROJECT_DIR$/public/admin/js/scripts.js" />
+        <option value="$PROJECT_DIR$/templates/admin.php" />
+        <option value="$PROJECT_DIR$/app/views/admin/menu/add-item.php" />
+        <option value="$PROJECT_DIR$/public/admin/css/custom.css" />
+        <option value="$PROJECT_DIR$/app/widgets/Menu/tpl/menu_nestable_tpl.php" />
+        <option value="$PROJECT_DIR$/app/widgets/Menu/tpl/menu_options_tpl.php" />
+        <option value="$PROJECT_DIR$/app/widgets/Menu/MenuWidget.php" />
+        <option value="$PROJECT_DIR$/app/views/admin/menu/edit-item.php" />
+        <option value="$PROJECT_DIR$/app/controllers/admin/MenuController.php" />
       </list>
     </option>
   </component>
@@ -247,6 +261,19 @@
               <item name="portalNes" type="b2602c69:ProjectViewProjectNode" />
               <item name="portalNes" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="portalNes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portalNes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="portalNes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portalNes" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -324,29 +351,31 @@
       <workItem from="1547737395720" duration="647000" />
       <workItem from="1547798823288" duration="24649000" />
       <workItem from="1548060121864" duration="5055000" />
-      <workItem from="1548069689727" duration="11520000" />
+      <workItem from="1548069689727" duration="12137000" />
+      <workItem from="1548144315726" duration="1148000" />
+      <workItem from="1548233712762" duration="7598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155884000" />
+    <option name="totallyTimeSpent" value="165247000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24322917" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18385416" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2489712" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.2489712" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -363,13 +392,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/admin/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="107" column="39" selection-start-line="107" selection-start-column="39" selection-end-line="107" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/Role.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
@@ -601,20 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/widgets/Menu/tpl/menu_options_tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="66" lean-forward="true" selection-start-column="66" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/menu/add-item.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="75" selection-start-line="15" selection-start-column="75" selection-end-line="15" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/BaseModel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -629,34 +637,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/admin/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="47" column="1" selection-start-line="47" selection-start-column="1" selection-end-line="47" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/Guard.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/admin/MenuController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
-          <folding>
-            <element signature="e#43#63#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/widgets/Menu/MenuWidget.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -678,23 +662,51 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="5290" selection-start-line="3" selection-start-column="5290" selection-end-line="3" selection-end-column="5290" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="57" column="67" selection-start-line="57" selection-start-column="67" selection-end-line="57" selection-end-column="67" />
+        <state relative-caret-position="266">
+          <caret line="14" column="115" selection-start-line="14" selection-start-column="115" selection-end-line="14" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/admin/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="50" column="22" selection-start-line="50" selection-start-column="22" selection-end-line="50" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/menu/items.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="136" selection-start-line="4" selection-start-column="59" selection-end-line="4" selection-end-column="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/menu/add-item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" column="116" selection-start-line="16" selection-start-column="116" selection-end-line="16" selection-end-column="116" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/admin/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
+        <state relative-caret-position="494">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/widgets/Menu/tpl/menu_nestable_tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="115" lean-forward="true" selection-start-line="6" selection-start-column="115" selection-end-line="6" selection-end-column="115" />
+          <folding>
+            <element signature="e#272#278#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -705,24 +717,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/menu/items.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/widgets/Menu/tpl/menu_nestable_tpl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/admin/MenuItemsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
+        <state relative-caret-position="266">
           <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/widgets/Menu/MenuWidget.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/admin/MenuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="93" column="36" selection-start-line="93" selection-start-column="36" selection-end-line="93" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/admin/menu/edit-item.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="111" selection-start-line="8" selection-start-column="111" selection-end-line="8" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/widgets/Menu/tpl/menu_options_tpl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="142" selection-start-column="142" selection-end-column="142" />
         </state>
       </provider>
     </entry>

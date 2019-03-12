@@ -4,11 +4,12 @@
             <?php if(empty($menu_items)):?>
             <h2>Menu items not found!</h2>
             <?php else:?>
-                <?php new app\widgets\Menu\MenuWidget($menu_items);?>
+                <?php new app\widgets\Menu\MenuWidget($menu_items, ['container'=>'ol', 'class'=>'dd-list', 'tpl' => 'tpl/menu_nestable_tpl.php']);?>
+                <?php //new app\widgets\Menu\MenuWidget($menu_items);?>
             <?php endif;?>
         </div>
         <div class="col">
-            <form action="/admin/menu/store-item" method="post">
+            <form id="form-items-menu" action="/admin/menu/store-item" method="post">
                 <div class="form-group">
                 <p><label>Родительский элемент</label><br>
                     <select name="parent_id" type="text" class="form-control">
